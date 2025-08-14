@@ -1,0 +1,61 @@
+Vehicle Class:
+
+
+Attributes: vehicle_id, brand, model, year, rental_rate_per_day, and is_available.
+
+
+Method: display_info() should show vehicle details.
+
+
+Method: rent_vehicle() sets is_available = False.
+
+
+Method: return_vehicle() sets is_available = True.
+
+
+Car and Bike Classes:
+
+
+Inherit from Vehicle.
+
+
+Add extra attributes:
+
+
+Car: seats, fuel_type
+
+
+Bike: cc, helmet_required
+
+
+Override display_info() to show additional info.
+
+
+Customer Class:
+
+
+Attributes: customer_id, name, email, rented_vehicles (list of vehicle objects).
+
+
+Method: rent(vehicle) to add vehicle to rented list and update availability.
+
+
+Method: return_vehicle(vehicle_id) to remove vehicle from rented list and update availability.
+
+
+RentalSystem Class (Composition):
+
+
+Has a list of all vehicles and customers.
+
+
+Method to add new vehicle or customer.
+
+
+Method to search available vehicles.
+
+
+Method to show all rented vehicles.
+
+
+
